@@ -7,8 +7,7 @@ describe('Página de cadastro', () => {
     context('Testes na página de cadastro', () => {
         it('Clica no link "Cadastra-se" e redireciona para a página de cadastro da clínica', () => {
             cy.get('[href="/cadastro"]').click();
-            cy.location('pathname').should('equal', '/cadastro')
-
+            cy.location('pathname').should('equal', '/cadastro');
         })
     })
 
@@ -23,7 +22,7 @@ describe('Página de cadastro', () => {
             cy.get('[data-test="inputSenhaVerificada"]').type('Senha123');
             cy.get('.sc-aXZVg').click();
             cy.contains('h2', 'Agora, os dados técnicos:').should('be.visible');
-            cy.get('.sc-iHbSHJ').should('exist').should('be.visible');
+            cy.get('.sc-ddjGPC').should('exist').should('be.visible');
 
         })
     })

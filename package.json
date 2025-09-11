@@ -4,13 +4,19 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "lint": "eslint cypress/**/*.js && eslint cypress.config.js",
+        "lint:fix": "eslint cypress/**/*.js cypress.config.js --fix",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@eslint/js": "^9.35.0",
         "@faker-js/faker": "^10.0.0",
         "cypress": "^13.7.2",
+        "eslint": "^9.35.0",
+        "eslint-plugin-cypress": "^5.1.1",
+        "globals": "^16.4.0",
         "mochawesome": "^7.1.3"
     }
 }

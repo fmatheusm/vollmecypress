@@ -42,7 +42,8 @@ export default defineConfig([
       "cypress/assertion-before-screenshot": "warn",
       "cypress/no-force": "warn",
       "cypress/no-async-tests": "error",
-      "cypress/no-pause": "error"
+      "cypress/no-pause": "error",
+      "Cypress": "no-undef"
     }
   }
 ]);

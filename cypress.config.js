@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 /* eslint-disable no-unused-vars */
 
 const { defineConfig } = require("cypress");

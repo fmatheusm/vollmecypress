@@ -6,7 +6,8 @@
     "scripts": {
         "lint": "eslint cypress/**/*.js && eslint cypress.config.js",
         "lint:fix": "eslint cypress/**/*.js cypress.config.js --fix",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "cy:open": "npx cypress open",
+        "test:tablet": "cypress run --config viewportWidth=768 viewportHeight=1024"
     },
     "author": "",
     "license": "ISC",
@@ -18,5 +19,8 @@
         "eslint-plugin-cypress": "^5.1.1",
         "globals": "^16.4.0",
         "mochawesome": "^7.1.3"
+    },
+    "dependencies": {
+        "cypress-plugin-api": "^2.11.2"
     }
 }
